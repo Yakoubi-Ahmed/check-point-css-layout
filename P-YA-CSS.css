@@ -1,0 +1,80 @@
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Roboto';
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+.Profil {
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+}
+
+.profil-name{
+  width: 100%;
+  text-align-last: center;
+}
+.profil-name p {
+  text-align-last: center;
+  color: white;
+  font-size: 30pt;
+}
+
+.profil-contenue {
+  height: 600px;
+  text-align-last: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profil-zonetext {
+  width: 40% ;
+  background-color: rgb(31, 31, 31);
+  text-align-last: center;
+}
+
+.profil-zonetext>.red {
+ color: red;
+ font-size: 14pt;
+}
+
+.profil-zonetext>.white {
+  color: white;
+  font-size: 14pt;
+ }
+
+ .formations {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(31, 31, 31);
+ }
+
+ 
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
